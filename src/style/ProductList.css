@@ -1,0 +1,46 @@
+/* position:relative;
+relative는 요소를 자기 자신을 기준으로 배치함 */
+
+.mainPage {
+  margin: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.M-img-box {
+  width: 250px;
+  height: 170px;
+  margin-bottom: 1em;
+  /* text-align: center; */
+  position: relative;
+}
+
+.M-img-box > img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.M-info-box .title {
+  font-size: 17px;
+  width: 250px;
+  height: auto;
+  display: flex;
+  /* border: solid 0.5px red; */
+  margin: 0 0 15px 0;
+}
+
+.M-info-box .price {
+  font-size: 15px;
+  font-weight: 650;
+  width: 250px;
+  height: auto;
+  display: flex;
+  /* border: solid 0.5px blue; */
+  margin: 0 0 15px 0;
+}
